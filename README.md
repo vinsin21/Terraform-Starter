@@ -48,3 +48,43 @@ Follow these steps to install Terraform on Ubuntu:
 ---
 
 You are now ready to start using Terraform on Ubuntu!
+
+## AWS CLI Prerequisite
+
+To use Terraform with AWS, you need to install and configure the AWS Command Line Interface (CLI).
+
+### Install AWS CLI on Ubuntu
+
+1. **Download the AWS CLI installer:**
+
+    ```bash
+    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    ```
+
+2. **Unzip the installer:**
+
+    ```bash
+    unzip awscliv2.zip
+    ```
+
+3. **Run the installer:**
+
+    ```bash
+    sudo ./aws/install
+    ```
+
+4. **Verify the installation:**
+
+    ```bash
+    aws --version
+    ```
+
+### Configure AWS CLI
+
+After installation, configure your AWS credentials:
+
+```bash
+aws configure
+```
+
+You will be prompted to enter your AWS Access Key ID, Secret Access Key, region, and output format.
